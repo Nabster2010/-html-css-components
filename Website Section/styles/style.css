@@ -1,0 +1,101 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  background-color: white;
+  margin: auto;
+  margin-top: 40px;
+  position: relative;
+}
+
+.container .main {
+  width: 100%;
+  background-color: #14142c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 150px;
+  color: white;
+  text-align: center;
+}
+
+.container .news-letter-container {
+  width: 70%;
+  background: #ec4747;
+  background: -webkit-gradient(linear, left top, right top, color-stop(39%, #ec4747), color-stop(70%, #ee6386));
+  background: linear-gradient(90deg, #ec4747 39%, #ee6386 70%);
+  margin: auto;
+  padding: 40px;
+  color: white;
+  text-align: center;
+  margin-top: -40px;
+  border-radius: 10px;
+}
+
+.container .news-letter-container input {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid white;
+  border-right: none;
+  height: 40px;
+  font-size: 16px;
+  color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 40%;
+  margin-right: 0;
+}
+
+.container .news-letter-container input::-webkit-input-placeholder {
+  color: white;
+}
+
+.container .news-letter-container input:-ms-input-placeholder {
+  color: white;
+}
+
+.container .news-letter-container input::-ms-input-placeholder {
+  color: white;
+}
+
+.container .news-letter-container input::placeholder {
+  color: white;
+}
+
+.container .news-letter-container .btn-submit {
+  background-color: white;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  height: 40px;
+  margin-left: -5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container .main {
+    padding: 100px 50px;
+  }
+  .container .news-letter-container .btn-submit {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
