@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #141c2c;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  background-color: #e5e6ec;
+  margin: 50px auto;
+  border-radius: 5px;
+  padding: 70px;
+}
+
+.container .lead {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container .lead h3 {
+  padding: 20px;
+}
+
+.container .apps {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+}
+
+.container .apps .app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.container .apps .app .details {
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.container .apps .app .details p {
+  font-weight: 200;
+  font-size: small;
+}
+
+.container .apps .app .details h3 {
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+.container .apps .app .details h3 i {
+  color: #1d8434;
+}
+
+.rounded-img {
+  width: 100px;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.btn-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.btn {
+  background-color: #141c2c;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: medium;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    padding: 0;
+  }
+  .container .apps {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container .apps .app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .container .apps .app .details {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
